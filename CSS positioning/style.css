@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #15138a;
+  color: white;
+  padding: 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: black;
+  transition: 0.5s;
+}
+
+svg {
+  font-size: larger;
+}
+
+.hero {
+  text-align: center;
+  color: white;
+  background-image: url(assets/pexels-francesco-ungaro-1525041.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 350px;
+  animation: bgchange ease-in-out 20s infinite forwards;
+}
+.hero h1{
+  margin-left: 50px;
+  width: 100%;
+}
+
+.writeup-section {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #e4ebf0;
+}
+
+.writeup-section h2 {
+  font-size: xx-large;
+
+}
+
+.writeup-section img {
+  width: 500px;
+  height: auto;
+}
+
+.text {
+  width: 600px;
+  padding-top: 40px;
+}
+
+.writeup-section2 {
+  flex-direction: row-reverse;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #e6f9fa;
+}
+
+.writeup-section2 img {
+  width: 320px;
+  height: 500px;
+}
+
+.hero .text {
+  width: 700px;
+}
+
+.text h1 {
+  font-size: 80px;
+}
+
+span {
+  font-family: cursive;
+  color: #39c3e6;
+}
+@media screen and (max-width: 950px){
+  /* Homepage Responsiveness */
+  .hero, .writeup-section, .writeup-section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text{
+    font-size: smaller;
+    text-align: center;
+  }
+  .hero .text{
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 100%;
+  }
+  .hero h1{
+    font-size: 40px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .hero span{
+    color: white;
+  }
+  .writeup-section .text, .writeup-section2 .text{
+    width: 320px;
+  }
+  .writeup-section img{
+    width: 350px;
+  }
+
+
+  /* About page responsiveness */
+  .about-content h2{
+    font-size: 40px;
+  }
+  .point{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .point img, .point p{
+    width: 100%;
+  }
+}
+
+
+/* About */
+.about-content h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+  background-image: url(assets/pexels-suzy-hazelwood-1174122.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 400px;
+  margin: 0;
+  animation: bgchange ease-in-out 20s infinite forwards;
+}
+
+@keyframes bgchange {
+  0% {
+    background-image: url(assets/pexels-francesco-ungaro-1525041.jpg);
+  }
+
+  20% {
+    background-image: url(assets/pexels-maxime-francis-2246476.jpg);
+  }
+
+  40% {
+    background-image: url(assets/pexels-reynaldo-brigworkz-brigantty-747101.jpg);
+  }
+
+  60% {
+    background-image: url(assets/pexels-roberto-nickson-2478248.jpg);
+  }
+
+  80% {
+    background-image: url(assets/pexels-sebastiaan-stam-1311587.jpg);
+  }
+
+  100% {
+    background-image: url(assets/pexels-francesco-ungaro-1525041.jpg);
+  }
+}
+
+.point {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  top: 50px;
+}
+
+.point p {
+  width: 450px;
+  text-align: center;
+}
+
+.point img {
+  width: 500px;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 40px;
+}
+
+button {
+  background-color: rgb(76, 128, 241);
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 8px;
+  transition: .5s;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+  border: 1.5px solid rgb(76, 128, 241);
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(76, 128, 241);
+}
+
+button a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+.about-content .footer {
+  padding-bottom: 10px;
+}
+
+.about-content .footer p {
+  padding-top: 20px;
+}
